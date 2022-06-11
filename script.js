@@ -42,8 +42,7 @@ function generateCards(pokemon, i) {
   const card = document.createElement("div");
 
   const { types } = pokemon;
-  const typesArr = [];
-  types.forEach((t) => typesArr.push(t.type.name));
+  const typesArr = types.map((t) => t.type.name);
 
   card.classList.add("card");
   const maintype = typesArr[0];
