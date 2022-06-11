@@ -4,4 +4,6 @@ A list of Pokemon in order using PokeAPI that shows id, name, and type of each p
 
 ## Link preview
 
+<img src="preview.png">
+
 https://hairalei.github.io/Pokedex/
