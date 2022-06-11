@@ -47,9 +47,7 @@ function generateCards(pokemon, i) {
   card.innerHTML = `
     <div class="img-box">
           <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-              i + 1
-            }.png"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png"
             alt="Photo of ${pokemon.name}"
           />
         </div>
