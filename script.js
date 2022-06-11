@@ -40,9 +40,14 @@ async function getPokemon(id) {
 
 function generateCards(pokemon, i) {
   const card = document.createElement("div");
-  const type = pokemon.types[0].type.name;
+
+  const { types } = pokemon;
+  const typesArr = [];
+  types.forEach((t) => typesArr.push(t.type.name));
+
   card.classList.add("card");
-  card.style.backgroundColor = colors[type];
+  const maintype = typesArr[0];
+  card.style.backgroundColor = colors[maintype];
 
   card.innerHTML = `
     <div class="img-box">
@@ -57,7 +62,7 @@ function generateCards(pokemon, i) {
           <h3 class="poke-name">${
             pokemon.name.slice(0, 1).toUpperCase() + pokemon.name.slice(1)
           }</h3>
-          <small class="poke-type">Type/s: ${pokemon.types[0].type.name}</small>
+          <small class="poke-type">Type/s: ${typesArr.join(", ")}</small>
         </div>
     `;
 
