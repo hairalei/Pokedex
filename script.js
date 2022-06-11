@@ -20,6 +20,7 @@ const colors = {
 
 const types = Object.keys(colors);
 
+/////////
 async function init() {
   for (let i = 0; i <= 150; i++) {
     await getPokemon(i);
@@ -64,4 +65,5 @@ function generateCards(pokemon, i) {
 
   container.appendChild(card);
 }
+
 init();
