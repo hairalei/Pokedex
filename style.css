@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(220, 220, 228);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 220, 228, 1) 0%,
+    rgba(150, 146, 218, 1) 29%,
+    rgba(145, 214, 216, 1) 61%,
+    rgba(253, 223, 223, 1) 100%
+  );
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 2rem;
+}
+
+.header {
+  background-color: rgba(197, 66, 19, 0.95);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  color: aliceblue;
+  letter-spacing: 3px;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+}
+
+.card {
+  background-color: #fddfdf;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2), 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+  width: 23rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.img-box {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.img-box img {
+  height: 100%;
+}
+
+.text-box {
+  text-align: center;
+}
+
+.poke-id {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.poke-name {
+  font-size: 2.5rem;
+}
+
+.poke-type {
+  font-size: 1.2rem;
+}
